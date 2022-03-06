@@ -1,0 +1,28 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 65px;
+    color: orange;
+    text-decoration: rgb(15, 42, 66);
+}
+
+body { font-size: 16px;
+        background-color: darkviolet;
+
+}
+
+p { font-weight: 600;
+    font-size: 3em;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+ul {
+    background-color: aquamarine;
+    line-height-step: 3px;
+    font-style: italic;
+}
+
+.new_background {
+    background-color: coral;
+}
