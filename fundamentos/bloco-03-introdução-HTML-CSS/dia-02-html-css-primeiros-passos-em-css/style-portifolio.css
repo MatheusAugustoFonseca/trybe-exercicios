@@ -1,0 +1,24 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: blanchedalmond;
+    line-height:110%;
+    text-align: justify;
+    
+} 
+h3 { text-decoration: underline;
+    font-size:20px;
+}
+h2 {text-align: center;
+
+}
+
+img { border-radius: 10%;
+    
+
+}
+
+.button-link {background-color: darkgreen;
+            text-align: left;
+            text-decoration: none;
+
+}
