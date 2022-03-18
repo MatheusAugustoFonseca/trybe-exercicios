@@ -22,7 +22,15 @@
 //  }
 
 //Utilize o for/of para imprimir os elementos da lista names com o console.log() :
-let names = ['João', 'Maria', 'Antônio', 'Margarida'];
-for (let impressao of names){
-    console.log(impressao);
-}
+// let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+// for (let impressao of names){
+//     console.log(impressao);
+// }
+let numbers = [5, 9, 3, 19, 70, 8, 100,
+    2, 35, 27];
+let result = 0;
+    for(let i = 0; i <numbers.length; i += 1){
+    result += numbers[i];
+    }
+    console.log(result);
+    
