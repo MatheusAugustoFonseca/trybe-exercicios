@@ -1,5 +1,5 @@
-const a = 59;
-const b = 70;
+const a = 5900;
+const b = 700;
 const c = 80;
 if (a > b && a > c){
     console.log(a);

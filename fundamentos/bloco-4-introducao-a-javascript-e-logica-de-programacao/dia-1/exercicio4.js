@@ -1,4 +1,4 @@
-const numero = 0;
+const numero = 10;
 
 if (numero > 0){
     console.log("positive");

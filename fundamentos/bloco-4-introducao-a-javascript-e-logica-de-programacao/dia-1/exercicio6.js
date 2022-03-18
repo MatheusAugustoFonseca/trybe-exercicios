@@ -1,20 +1,26 @@
-const peça = "rei";
 
-if (peça == "peao") {
-    console.log("Uma ou duas casas, na vertical");
- }
-else if (peça == "torre") {
-    console.log("Vertical e horizontal, quantas casas quiser");
-}
-else if (peça == "bispo") {
-    console.log("Diagonal, quantas casas quiser");
-}
-else if (peça == 'cavalo') {
-        console.log("Em formato de L, duas casas na horizontal ou vertical + uma casa em outro sentido, fazendo 90*");
-}
-else if (peça == "rainha") {
-    console.log("Vertical, horizontal e diagonal, quantas casas quiser");
-}
-else if (peça == "rei") {
-    console.log("Vertical, horizontal e diagonal, apenas uma casa");
-}
+const chessPiece = 'bispo';
+
+switch (chessPiece.toLowerCase()) {
+  case 'rei':
+    console.log('Rei-> Uma casa apenas para qualquer direção.');
+    break;
+  case 'bispo':
+    console.log('Bispo-> Diagonal.');
+    break;
+  case 'rainha':
+    console.log('Rainha-> Diagonal, horizontal e vertical.');
+    break;
+  case 'cavalo':
+    console.log('Cavalo -> "L" pode pular sobre as peças.');
+    break;
+  case 'torre':
+    console.log('Torre -> Horizontal e vertical.');
+    break;
+  case 'peão':
+    console.log("Peão -> Apenas uma casa para frente, no primeiro movimento podem ser duas casas.");
+    break;
+  default:
+    console.log('Erro, peça inválida!');
+    break;
+};
