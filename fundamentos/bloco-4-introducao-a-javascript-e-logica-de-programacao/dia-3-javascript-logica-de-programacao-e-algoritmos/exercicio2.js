@@ -13,6 +13,6 @@ let contrario = "";
 // console.log(contrario);
 
 for(let i = 0; i < word.length; i += 1){
-    contrario += word[word.length - 1 - i]
+    contrario += word[word.length - (1 + i)]
 }
 console.log(contrario);
