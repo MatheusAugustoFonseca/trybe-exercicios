@@ -6,9 +6,13 @@
 let word = "trybe";
 let contrario = "";
 
-// for (let i = word.length; i > 0 ; i-=1){
-//     contrario += word.indexOf(i);
+// for (let i = word.length; i = 0 ; i-=1){
+//   contrario += word[i];
 
-// }
+//  }
 // console.log(contrario);
-console.log(word.indexOf(6));
+
+for(let i = 0; i < word.length; i += 1){
+    contrario += word[word.length - 1 - i]
+}
+console.log(contrario);
