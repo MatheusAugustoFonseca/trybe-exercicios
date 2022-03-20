@@ -8,19 +8,15 @@
 //       console.log("Olá " + names[salute]);
 //   }
 
-// let car = {
-//     model: 'A3 Sedan',
-//     manufacturer: 'Audi',
-//     year: 2020
-//   };
+let car = {
+    model: 'A3 Sedan',
+    manufacturer: 'Audi',
+    year: 2020
+  };
 
-//   for(let full in car){
-//       console.log(full, car[full]);
-//   }
-// Com função
-function soma(a, b) {
-    return a + b;
- 
+  for(let full in car){
+      console.log(full, car[full]);
+  }
+
   
-soma(5, 2);
-}
+
