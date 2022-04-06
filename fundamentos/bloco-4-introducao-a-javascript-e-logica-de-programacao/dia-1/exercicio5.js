@@ -1,5 +1,5 @@
 const a = 100;
-const b = 10;
+const b = 40;
 const c = 40;
 
 if (a+b+c === 180){
