@@ -21,7 +21,7 @@
 // Resultado: R$ 2.612,55.
 // Dica: que tal identificar as alíquotas com variáveis de nomes explicativos?
 
-let salario = 1903.99;
+let salario = 1903.98;
 let aliquotaInss = 0;
 let salarioBase = salario - aliquotaInss;
 let iR = 0;
@@ -51,6 +51,6 @@ if(salarioBase <= 1903.98){
 
 console.log("Seu salário é: " + (salario))
 console.log("O imposto do INSS é: " + aliquotaInss);
-console.log("Salário - INSS é: " + salarioBase);
+console.log("Salário - INSS é: " + (salarioBase - aliquotaInss));
 console.log("Seu IR é: " + iR);
-console.log("Seu salário líquido é: " + salarioLiquido);
+console.log("Seu salário líquido é: " + (salario - aliquotaInss - iR));
