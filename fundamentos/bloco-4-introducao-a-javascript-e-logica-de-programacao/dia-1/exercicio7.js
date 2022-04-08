@@ -1,4 +1,4 @@
-const conceito = 50;
+const conceito = -10;
 
 if (conceito < 0 || conceito > 100) {
   console.log("Erro, nota inválida");
