@@ -8,5 +8,7 @@ let names = ['João', 'Maria', 'Antônio', 'Margarida'];
 for( let listNames of names){
     console.log(listNames);
     }
-
-for(let i = 0; i < names)
+console.log("***************");
+for(let i = 0; i < names.length; i += 1){
+    console.log(names[i]);
+}
