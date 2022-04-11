@@ -17,4 +17,4 @@ for(let i = 0; i < word.length; i += 1){
 
 
 
-console.log(checkPalindromo('arara'));
+console.log(checkPalindromo('tamat'));
