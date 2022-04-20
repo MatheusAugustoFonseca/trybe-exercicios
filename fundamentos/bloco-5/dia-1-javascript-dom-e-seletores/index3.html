@@ -3,21 +3,35 @@
   <body>
     <header>
       <h2 id="page-title">Título</h2>
-      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <p class="paragraph" id="paragraph">Dê uma cor para este parágrafo!</p>
       <h4 id="subtitle">Subtítulo</h4>
-      <p id="second-paragraph">Segundo parágrafo!</p>
+      <p class="paragraph" id="second-paragraph">Segundo parágrafo!</p>
     </header>
     <script>
       const paragraph = document.querySelector("#paragraph");
       paragraph.style.color = "red";
-      document.querySelector('#page-title').innerText = "constantine";
+      //document.querySelector('#page-title').innerText = "constantine";
+      let title = document.getElementById('page-title');
+      title.innerText = "interestrellar";
+
       // existem dois jeitos de alterar o document:
       // 1 atribuindo uma constante, depois alterando a cont/var
       // 2 já atribuindo no getElementById.
-    //   const secondParagraph = document.getElementById("second-paragraph");
-    //   secondParagraph.style.backgroundColor = "blue";
-    //   document.getElementById("second-paragraph").style.backgroundColor = "green";
+     const secondParagraph = document.getElementById("second-paragraph");
+    // secondParagraph.style.backgroundColor = "blue";
+     // document.getElementById("second-paragraph").style.backgroundColor = "green";
     //  document.getElementsByTagName('p')[0].innerText = 'Alterando por tag name';
+    const altSub = document.getElementById('subtitle');
+    altSub.innerText = 'alterando subtitulo';
+
+    const paragrafos = document.getElementsByClassName('paragraph');
+    paragrafos[0].style.backgroundColor = 'blue';
+    paragrafos[1].style.fontSize = '2rem';
+
+    const subtitulo = document.getElementsByTagName('h4')[0];
+    subtitulo.style.color = ('red');
+
+
      
     </script>
   </body>
