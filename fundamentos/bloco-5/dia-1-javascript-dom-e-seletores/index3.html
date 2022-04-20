@@ -22,14 +22,15 @@
      // document.getElementById("second-paragraph").style.backgroundColor = "green";
     //  document.getElementsByTagName('p')[0].innerText = 'Alterando por tag name';
     const altSub = document.getElementById('subtitle');
-    altSub.innerText = 'alterando subtitulo';
-
+    //altSub.innerText = 'alterando subtitulo';
+    //document.getElementById('subtitle').innerText = "alterando 2";
     const paragrafos = document.getElementsByClassName('paragraph');
     paragrafos[0].style.backgroundColor = 'blue';
     paragrafos[1].style.fontSize = '2rem';
+    document.getElementsByClassName('paragraph')[1].style.backgroundColor = 'green';
 
-    const subtitulo = document.getElementsByTagName('h4')[0];
-    subtitulo.style.color = ('red');
+    const subtitulo = document.getElementsByTagName('h4');
+    subtitulo[0].style.color = ('green');
 
 
      
