@@ -48,8 +48,6 @@
         - document.getElementsByClassName()
         - document.getElementsByTagName()
   
-  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
        //Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
        function changingFirstP(){
@@ -75,6 +73,24 @@
           changeH1.innerText = "Exercício 5.1 - JavaEscripit";
         }
         fixingH1();
+      //Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+        function upCaseP() {
+          const upperCase = document.getElementsByTagName('p');
+          upperCase[0].innerHTML = upperCase[0].innerHTML.toUpperCase();
+          // for(let index in upperCase){
+          //   upperCase[index].innerHTML = upperCase[index].toUpperCase();
+          // }
+        }
+        upCaseP();
+     // Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        function printP() {
+          const printing = document.getElementsByTagName('p');
+          for(let index in printing) {
+            console.log(printing[index].innerHTML);
+          }
+        }
+        printP();
+
 
     
 
