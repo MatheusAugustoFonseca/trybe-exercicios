@@ -58,7 +58,12 @@
     const filhoDoPrimeiroFilhoDoFilho = document.createElement('div');
     filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
     firstChildOfChild.appendChild(filhoDoPrimeiroFilhoDoFilho);
-    
+    //4 A partir desse filho criado, acesse terceiroFilho .
+    const thirdChildByFilhoDoPrimeiroFilhoDoFilho = filhoDoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling;
+
+    console.log(thirdChildByFilhoDoPrimeiroFilhoDoFilho);
+
+
 
 
 
