@@ -20,7 +20,21 @@
     </section>
   </main>
   <script>
+    //1 Acesse o elemento elementoOndeVoceEsta .
+    const elementWhereAreU = document.getElementById('elementoOndeVoceEsta');
+    //2 Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+    elementWhereAreU.parentElement.style.color = 'blue';
+    const father = elementWhereAreU.parentElement;
+    //or atribui a ele uma constante e então modifica a cor.
+    //3 Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+    // const firstChildOfChild = document.getElementById('primeiroFilho');
+    // firstChildOfChild.innerHTML = 'Adicionando texto ao id primeiro filho do filho com o document.getElementById.'
+    const firstChildOfChild = elementWhereAreU.firstElementChild;
+    firstChildOfChild.innerHTML = 'Adicionando texto ao id primeiro filho do filho através do elementoOndeVoceEsta, usando elementWhereAreU';
+    //4 Acesse o primeiroFilho a partir de pai .
     
+
+
   </script>
 </body>
 </html>
