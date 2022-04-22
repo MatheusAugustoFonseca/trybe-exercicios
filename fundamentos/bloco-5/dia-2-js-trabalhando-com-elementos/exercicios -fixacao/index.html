@@ -45,6 +45,21 @@
     const thirdChildByFather = father.lastElementChild.previousElementSibling;
     console.log(thirdChildByFather);
 
+    // PARTE 2
+    //1 Crie um irmão para elementoOndeVoceEsta .
+    const brother = document.createElement('section');
+    brother.id = 'irmaoElementOndeVoceEsta';
+    father.appendChild(brother);
+    //2 Crie um filho para elementoOndeVoceEsta .
+    const sonWhereAreU = document.createElement('section');
+    sonWhereAreU.id = 'filhoElementoOndeVoceEsta';
+    elementWhereAreU.appendChild(sonWhereAreU);
+    //3 Crie um filho para primeiroFilhoDoFilho .
+    const filhoDoPrimeiroFilhoDoFilho = document.createElement('div');
+    filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
+    firstChildOfChild.appendChild(filhoDoPrimeiroFilhoDoFilho);
+    
+
 
 
   </script>
