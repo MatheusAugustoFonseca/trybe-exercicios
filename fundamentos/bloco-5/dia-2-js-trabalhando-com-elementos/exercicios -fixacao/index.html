@@ -36,7 +36,14 @@
     //5 Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
     const firstElementChildSibling = elementWhereAreU.previousElementSibling; //how about nextElementSibling?
     //6 Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
-    const atentionText = elementWhereAreU
+    const atentionText = elementWhereAreU.nextSibling;
+    console.log(atentionText);
+    //7 Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+    const thirdChild = elementWhereAreU.nextElementSibling;
+    console.log(thirdChild);
+    //8 Agora acesse o terceiroFilho a partir de pai .
+    const thirdChildByFather = father.lastElementChild.previousElementSibling;
+    console.log(thirdChildByFather);
 
 
 
