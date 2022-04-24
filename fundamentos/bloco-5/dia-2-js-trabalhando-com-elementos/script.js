@@ -20,10 +20,20 @@ elementSection2.className = 'left-content';
 elementMain.appendChild(elementSection2);
 //6 Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
 const elementRigthContent = document.createElement('section');
-elementRigthContent.className = 'rigth-content';
+elementRigthContent.className = '.rigth-content';
 elementMain.appendChild(elementRigthContent);
 //7 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
 const img = document.createElement('img');
 img.src = 'https://picsum.photos/200';
 img.className = 'small-image';
 elementSection2.appendChild(img);
+//8 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+const elementUl = document.createElement('ul');
+elementRigthContent.appendChild(elementUl);
+const array = ['Um', 'Dois'
+, 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+for (let num in array) {
+  const elementItens = document.createElement('li');
+  elementItens.innerText = array[num];
+  elementUl.appendChild(elementItens);
+}
