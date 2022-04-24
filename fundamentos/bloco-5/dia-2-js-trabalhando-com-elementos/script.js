@@ -22,3 +22,8 @@ elementMain.appendChild(elementSection2);
 const elementRigthContent = document.createElement('section');
 elementRigthContent.className = 'rigth-content';
 elementMain.appendChild(elementRigthContent);
+//7 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+const img = document.createElement('img');
+img.src = 'https://picsum.photos/200';
+img.className = 'small-image';
+elementSection2.appendChild(img);
