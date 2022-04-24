@@ -4,5 +4,10 @@ elementH1.innerText = 'Exercício 5.2 - JavaScript DOM';
 document.body.appendChild(elementH1);
  //2Adicione a tag main com a classe main-content como filho da tag body ;
  const elementMain = document.createElement('main');
- elementMain.classList = '.main-content';
+ elementMain.className = '.main-content';
  document.body.appendChild(elementMain);
+ //3 Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+ const elementSection = document.createElement('section');
+ elementSection.className = '.center-content';
+ elementMain.appendChild(elementSection);
+
