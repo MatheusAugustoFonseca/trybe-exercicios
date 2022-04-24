@@ -18,3 +18,7 @@ elementSection.appendChild(elementP);
 const elementSection2 = document.createElement('section');
 elementSection2.className = 'left-content';
 elementMain.appendChild(elementSection2);
+//6 Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+const elementRigthContent = document.createElement('section');
+elementRigthContent.className = 'rigth-content';
+elementMain.appendChild(elementRigthContent);
