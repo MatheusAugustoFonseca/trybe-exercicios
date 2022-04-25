@@ -48,3 +48,9 @@ for(let index = 1; index <= 3; index += 1){
 //elementH1.className = 'title';
 const title = document.querySelector('h1');
 title.className = 'title';
+//2.2 Adicione a classe description nas 3 tags h3 criadas;
+const descriptionH3 = document.getElementsByTagName('h3');
+//descriptionH3.className = 'description';
+for (let index = 0; index < 3; index += 1) {
+  descriptionH3[index].className = 'description';
+}
