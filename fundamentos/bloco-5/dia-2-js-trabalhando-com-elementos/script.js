@@ -4,7 +4,7 @@ elementH1.innerText = 'Exercício 5.2 - JavaScript DOM';
 document.body.appendChild(elementH1);
  //2Adicione a tag main com a classe main-content como filho da tag body ;
  const elementMain = document.createElement('main');
- elementMain.className = '.main-content';
+ elementMain.className = 'main-content';
  document.body.appendChild(elementMain);
  //3 Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
  const elementSection = document.createElement('section');
@@ -20,7 +20,7 @@ elementSection2.className = 'left-content';
 elementMain.appendChild(elementSection2);
 //6 Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
 const elementRigthContent = document.createElement('section');
-elementRigthContent.className = '.rigth-content';
+elementRigthContent.className = 'rigth-content';
 elementMain.appendChild(elementRigthContent);
 //7 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
 const img = document.createElement('img');
@@ -36,4 +36,11 @@ for (let num in array) {
   const elementItens = document.createElement('li');
   elementItens.innerText = array[num];
   elementUl.appendChild(elementItens);
+}
+//9 Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+
+for(let index = 1; index <= 3; index += 1){
+  const elementH3 = document.createElement('h3');
+  elementH3.innerText = 'show ' + index;
+  elementMain.appendChild(elementH3);
 }
