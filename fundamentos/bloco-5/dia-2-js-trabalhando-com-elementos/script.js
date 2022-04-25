@@ -63,3 +63,6 @@ elementMain.removeChild(secLefContent);
 const rightContent = document.getElementsByClassName('right-content')[0];
 console.log(rightContent);
 rightContent.style.marginRight = 'auto'
+//5.2 Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+const elementCenterContent = document.getElementsByClassName('center-content')[0];
+elementCenterContent.parentNode.style.backgroundColor = 'green';
