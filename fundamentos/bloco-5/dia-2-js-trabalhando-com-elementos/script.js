@@ -44,3 +44,7 @@ for(let index = 1; index <= 3; index += 1){
   elementH3.innerText = 'show ' + index;
   elementMain.appendChild(elementH3);
 }
+//1.2 Adicione a classe title na tag h1 criada;
+//elementH1.className = 'title';
+const title = document.querySelector('h1');
+title.className = 'title';
