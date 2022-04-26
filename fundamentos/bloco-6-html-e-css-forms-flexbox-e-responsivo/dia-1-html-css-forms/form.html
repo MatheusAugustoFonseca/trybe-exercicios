@@ -12,8 +12,9 @@
     <p>Preencha agora o seu formulário da Trybe Trip:</p>
   </header>
   <main>
+    <fieldset>
     <form action="" method="get">
-      <label for="full-name">Nome
+      <label for="full-name">Nome Completo
         <input type="text" name="full-name" id="full-name" placeholder="Digite aqui seu nome completo" required maxlength="40" minlength="10">
       </label>
       <br>
@@ -54,10 +55,11 @@
         <input type="checkbox" name="aceito" id="check-2">
       </label>
       <br>
-      <button type="submit">Enviar formulário</button>
-    </form>
-    <button type="reset">Resetar informações</button>
+      </form>
+  </fieldset>
+    <button type="submit" id="submit-btn">Participar do concurso TrybeTrip</button>
+    <button type="button" id="reset">Resetar informações</button>
   </main>
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
