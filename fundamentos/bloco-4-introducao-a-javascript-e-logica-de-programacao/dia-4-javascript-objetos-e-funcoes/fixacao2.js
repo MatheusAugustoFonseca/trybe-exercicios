@@ -8,15 +8,23 @@
 //       console.log("Olá " + names[salute]);
 //   }
 
-let car = {
-    model: 'A3 Sedan',
-    manufacturer: 'Audi',
-    year: 2020
-  };
+// let car = {
+//     model: 'A3 Sedan',
+//     manufacturer: 'Audi',
+//     year: 2020
+//   };
 
-  for(let full in car){
-      console.log(full, car[full]);
-  }
+//   for(let full in car){
+//       console.log(full, car[full]);
+//   }
 
+let food = ["hamburguer", "bife", "acarajé"];
+
+for (let value of food){
+    console.log(value);
+}
   
+for (let key in food){
+    console.log(food[key]);
+}
 
