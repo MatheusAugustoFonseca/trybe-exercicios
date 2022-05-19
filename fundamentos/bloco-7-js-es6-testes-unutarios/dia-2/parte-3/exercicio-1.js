@@ -59,4 +59,39 @@ const verifyKeyValue = (obj, keyName, keyValue) => {
   }
   return isEqual;
 }
-console.log(verifyKeyValue(lesson2, 'professor', 'Carlos'));
+// console.log(verifyKeyValue(lesson2, 'professor', 'Carlos'));
+
+//BOOOOOOOONUUUUS
+const mathStudent = (obj) => {
+  let total = 0;
+  const array = Object.keys(obj);
+  for (let index in array) {
+    if (obj[array[index]].materia === 'Matemática') {
+      total += obj[array[index]].numeroEstudantes;
+    }
+  }
+  return total;
+}
+// console.log(mathStudent(allLessons));
+const getInfo = (obj, professorName) => {
+  const allLessons = [];
+  let allStudent = 0;
+  const array = Object.values(obj);
+  // console.log(array);
+  for (let index in array) {
+    if (array[index].professor === professorName) {
+      allLessons.push(array[index].materia)
+      allStudent += array[index].numeroEstudantes;
+      // console.log(index);
+    }
+  }
+  return { lessons: allLessons, estudantes: allStudent};
+}
+
+const createReport = (allLessons, professorName) => {
+  const report ={};
+  report.professor = professorName;
+  Object.assign(report, getInfo(allLessons, professorName));
+  return report;
+}
+console.log(createReport(allLessons, 'Maria Clara'));
