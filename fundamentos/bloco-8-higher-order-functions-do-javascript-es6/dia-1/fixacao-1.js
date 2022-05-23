@@ -1,16 +1,21 @@
 const wakeUp = () => 'Acordando!!'
 
-const coffee = () => {
-  return 'Bora tomar café!!'
-}
+const coffee = () => 'Bora tomar café!!'
 
-const sleep = () => {
-  return 'Partiu dormir!!'
-}
+const sleep = () => 'Partiu dormir!!'
 
-const doingThings = (param) => {
-  const result = param();
+
+const doingThings = (callback) => {
+  const result = callback();
   console.log(result);
   // console.log(param());
 }
 doingThings(wakeUp);
+
+// const repeat = (number, action) => {
+//   for (let count = 0; count <= number; count += 1) {
+//     action(count);
+//   }
+// };
+
+// repeat(5, console.group);
