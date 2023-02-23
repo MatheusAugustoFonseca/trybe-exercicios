@@ -1,10 +1,18 @@
 // Crie uma classe cujo objeto represente um Cachorro.
 
-class Dog {
+// interface pode substituir a tipagem direto na classe
+interface Dog {
   name: string;
   birthDate: Date;
   age: number;
   breed: string;
+}
+
+class Dog {
+  // name: string;
+  // birthDate: Date;
+  // age: number;
+  // breed: string;
 
     constructor(name: string, birthDate: Date, age: number, breed: string) {
       this.name = name;
