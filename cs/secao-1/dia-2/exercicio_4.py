@@ -6,7 +6,6 @@ def retrieve_books(file):
     return json.load(file)
 
 
-
 def count_books_by_categories(books):
     categories = {}
     for book in books:
