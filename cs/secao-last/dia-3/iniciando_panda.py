@@ -31,7 +31,8 @@ meu_primeiro_dataframe["aprovado"] = meu_primeiro_dataframe["média"].apply(
 # print(meu_primeiro_dataframe.describe())
 # print(meu_primeiro_dataframe.info())
 # print(meu_primeiro_dataframe.head(2))
-print(meu_primeiro_dataframe.tail(2))
+# print(meu_primeiro_dataframe.tail(2))
+print(meu_primeiro_dataframe["primeira_nota"].unique())
 
 
 
